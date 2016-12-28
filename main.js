@@ -46,9 +46,6 @@ p2Button.addEventListener("click", function(){
 
 });
 
-resetButton.addEventListener("click", function(){
-  reset();
-});
 function reset() {
   p1Score = 0;
   p2Score = 0;
@@ -58,6 +55,11 @@ function reset() {
   p2Display.classList.remove("winner");
   gameOver = false;
 }
+
+resetButton.addEventListener("click", function(){
+  reset();
+});
+
 numInput.addEventListener("change", function(){
   winningScoreDisplay.textContent = numInput.value;
   winningScore = Number(numInput.value);
