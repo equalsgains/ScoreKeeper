@@ -1,9 +1,14 @@
+
+//buttons
 var p1Button = document.querySelector("#p1");
 var p2Button = document.querySelector("#p2");
+//player scores
 var p1Score = 0;
 var p2Score = 0;
+//score display
 var p1Display = document.querySelector("#p1Display");
 var p2Display = document.querySelector("#p2Display");
+//winning score and gameOver
 var gameOver = false;
 var winningScore = 5;
 
